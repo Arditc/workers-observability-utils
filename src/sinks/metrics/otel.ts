@@ -1,4 +1,4 @@
-import { type ExportedMetricPayload, MetricType } from "../../types";
+import { type ExportedMetricPayload, MetricType } from "../../types.js";
 
 import {
   AggregationTemporality,
@@ -6,9 +6,9 @@ import {
   type OTLPMetricsPayload,
   type ResourceMetrics,
   type ScopeMetrics,
-} from "./otel-metrics-types";
+} from "./otel-metrics-types.js";
 
-import type { MetricSink } from "../sink";
+import type { MetricSink } from "../sink.js";
 
 export interface OtelMetricSinkOptions {
   url: string;

@@ -7,7 +7,7 @@ import {
   METRICS_CHANNEL_NAME,
   MetricType,
   type Tags,
-} from "./types";
+} from "./types.js";
 
 const metricsChannel: Channel = channel(METRICS_CHANNEL_NAME);
 

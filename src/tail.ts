@@ -1,10 +1,10 @@
 import type { TraceItem } from "@cloudflare/workers-types";
-import { MetricsTail, type MetricTailOptions } from "./metricsTail";
-import { LogsTail, type LogTailOptions } from "./logsTail";
-export { DatadogMetricSink } from "./sinks/metrics/datadog";
-export { WorkersAnalyticsEngineSink } from "./sinks/metrics/workersAnalyticsEngine";
-export { OtelMetricSink } from "./sinks/metrics/otel";
-export { OtelLogSink } from "./sinks/logs/otel";
+import { MetricsTail, type MetricTailOptions } from "./metricsTail.js";
+import { LogsTail, type LogTailOptions } from "./logsTail.js";
+export { DatadogMetricSink } from "./sinks/metrics/datadog.js";
+export { WorkersAnalyticsEngineSink } from "./sinks/metrics/workersAnalyticsEngine.js";
+export { OtelMetricSink } from "./sinks/metrics/otel.js";
+export { OtelLogSink } from "./sinks/logs/otel.js";
 
 export interface TailExporterOptions {
   metrics?: MetricTailOptions;

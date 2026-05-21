@@ -1,4 +1,4 @@
-import type { ExportedMetricPayload } from "../types";
+import type { ExportedMetricPayload } from "../types.js";
 import type { TraceItem } from "@cloudflare/workers-types";
 
 export interface MetricSink {

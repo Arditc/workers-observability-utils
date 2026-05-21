@@ -1,11 +1,11 @@
-import { calculateHistogramValue, calculatePercentile } from "./utils/maths";
+import { calculateHistogramValue, calculatePercentile } from "./utils/maths.js";
 import {
   type HistogramAggregates,
   type MetricPayload,
   type ExportedMetricPayload,
   MetricType,
   type Tags,
-} from "./types";
+} from "./types.js";
 
 interface BaseStoredMetric {
   name: string;

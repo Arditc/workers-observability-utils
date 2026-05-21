@@ -10,9 +10,9 @@ import {
   type ResourceLogs,
   type ScopeLogs,
   SeverityNumber,
-} from "./otel-logs-types";
+} from "./otel-logs-types.js";
 import { ulidFactory } from "ulid-workers";
-import type { LogSink } from "../sink";
+import type { LogSink } from "../sink.js";
 import { flatten } from "flat";
 export interface OtelLogSinkOptions {
   url: string;

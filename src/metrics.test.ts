@@ -8,13 +8,13 @@ import {
   afterAll,
 } from "vitest";
 import { subscribe, unsubscribe } from "node:diagnostics_channel";
-import { metrics } from "./index";
+import { metrics } from "./index.js";
 import {
   MetricType,
   METRICS_CHANNEL_NAME,
   type MetricPayload,
   type HistogramOptions,
-} from "./types";
+} from "./types.js";
 
 describe("metrics", () => {
   let receivedMessages: MetricPayload[] = [];
