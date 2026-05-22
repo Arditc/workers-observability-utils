@@ -7,6 +7,7 @@
 export * from "./metrics.js";
 export * from "./tail.js";
 export * from "./sinks/metrics/datadog.js";
+export type { LogLevel } from "./logger.js";
 
 import * as metrics from "./metrics.js";
 import { TailExporter } from "./tail.js";
